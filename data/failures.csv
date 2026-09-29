@@ -1,0 +1,220 @@
+date,well_id,cycle,failure,probable_cause,downtime_days,spm,stroke_m
+2021-04-15,BGW-01,2,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2022-01-28,BGW-01,3,pump_unseat,wear / random,3,2.0,2.18
+2022-08-08,BGW-01,4,rod_part,rod fatigue (Goodman overload),5,3.0,2.18
+2022-11-16,BGW-01,5,rod_part,rod fatigue (Goodman overload),5,7.0,2.18
+2024-09-29,BGW-01,7,rod_part,wear / random,5,3.0,2.18
+2020-08-04,BGW-02,1,rod_part,rod floating / impact loading,5,3.0,1.73
+2021-02-05,BGW-02,2,rod_part,rod floating / impact loading,5,8.0,1.73
+2021-03-03,BGW-02,2,rod_part,rod floating / impact loading,5,6.0,1.73
+2021-03-20,BGW-02,2,rod_part,rod floating / impact loading,5,5.0,1.73
+2021-11-08,BGW-02,3,rod_part,rod floating / impact loading,5,7.0,1.73
+2021-12-01,BGW-02,3,rod_part,rod floating / impact loading,5,6.0,1.73
+2022-03-13,BGW-02,4,rod_part,rod floating / impact loading,5,8.0,1.73
+2022-04-20,BGW-02,4,rod_part,rod floating / impact loading,5,7.0,1.73
+2022-05-20,BGW-02,4,rod_part,rod floating / impact loading,5,5.0,1.73
+2022-07-19,BGW-02,4,rod_part,rod floating / impact loading,5,3.0,1.73
+2022-10-12,BGW-02,5,rod_part,rod floating / impact loading,5,6.0,1.73
+2023-02-01,BGW-02,6,rod_part,rod floating / impact loading,5,8.0,1.73
+2023-02-12,BGW-02,6,rod_part,rod floating / impact loading,5,7.0,1.73
+2023-02-19,BGW-02,6,rod_part,rod floating / impact loading,5,6.0,1.73
+2023-03-09,BGW-02,6,rod_part,rod floating / impact loading,5,5.0,1.73
+2023-07-06,BGW-02,7,rod_part,rod floating / impact loading,5,6.5,1.73
+2023-09-11,BGW-02,8,pump_unseat,wear / random,3,8.0,1.73
+2023-10-20,BGW-02,8,rod_part,rod floating / impact loading,5,7.5,1.73
+2023-11-05,BGW-02,8,rod_part,rod floating / impact loading,5,6.5,1.73
+2023-11-30,BGW-02,8,pump_unseat,rod floating / impact loading,3,5.5,1.73
+2023-12-11,BGW-02,8,rod_part,rod floating / impact loading,5,4.5,1.73
+2023-12-17,BGW-02,8,rod_part,rod floating / impact loading,5,3.5,1.73
+2024-03-20,BGW-02,9,rod_part,rod floating / impact loading,5,6.0,1.73
+2024-08-04,BGW-02,10,rod_part,rod floating / impact loading,5,5.5,1.73
+2024-11-12,BGW-02,11,rod_part,rod floating / impact loading,5,6.0,1.73
+2025-02-19,BGW-02,12,rod_part,rod floating / impact loading,5,5.5,1.73
+2025-06-27,BGW-02,13,pump_unseat,rod floating / impact loading,3,4.0,1.73
+2025-12-16,BGW-02,14,rod_part,rod floating / impact loading,5,3.0,1.73
+2026-06-10,BGW-02,15,rod_part,rod floating / impact loading,5,2.0,1.73
+2020-11-19,BGW-03,1,rod_part,rod floating / impact loading,5,2.0,2.64
+2021-02-14,BGW-03,2,pump_unseat,wear / random,3,5.0,2.64
+2021-05-17,BGW-03,2,rod_part,rod floating / impact loading,5,2.0,2.64
+2021-10-20,BGW-03,3,rod_part,rod fatigue (Goodman overload),5,2.0,2.64
+2022-06-11,BGW-03,4,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-01-20,BGW-03,5,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-07-20,BGW-03,6,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-12-19,BGW-03,7,rod_part,rod floating / impact loading,5,2.0,2.64
+2024-03-11,BGW-03,8,rod_part,wear / random,5,4.0,2.64
+2024-06-13,BGW-03,9,rod_part,wear / random,5,6.0,2.64
+2024-08-11,BGW-03,9,rod_part,rod floating / impact loading,5,3.0,2.64
+2019-10-19,BGW-04,1,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-02-19,BGW-04,2,rod_part,rod floating / impact loading,5,4.5,2.18
+2020-06-30,BGW-04,2,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18
+2021-10-04,BGW-04,4,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2021-12-02,BGW-04,5,pump_unseat,wear / random,3,7.0,2.18
+2022-02-11,BGW-04,5,pump_unseat,rod fatigue (Goodman overload),3,3.5,2.18
+2024-12-19,BGW-04,10,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2025-02-01,BGW-04,11,pump_unseat,wear / random,3,7.0,2.18
+2025-11-19,BGW-04,12,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-06-12,BGW-05,1,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2020-10-01,BGW-05,2,rod_part,rod floating / impact loading,5,6.0,1.73
+2021-03-07,BGW-05,2,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2021-06-12,BGW-05,3,rod_part,rod floating / impact loading,5,4.0,1.73
+2021-10-25,BGW-05,4,pump_unseat,rod floating / impact loading,3,4.5,1.73
+2023-07-12,BGW-05,6,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2024-01-03,BGW-05,7,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2024-08-29,BGW-05,9,pump_unseat,wear / random,3,7.0,1.73
+2024-11-04,BGW-05,9,rod_part,rod floating / impact loading,5,3.0,1.73
+2025-02-25,BGW-05,10,rod_part,wear / random,5,4.0,1.73
+2025-04-23,BGW-05,11,rod_part,wear / random,5,6.5,1.73
+2025-08-11,BGW-05,11,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2020-06-08,BGW-06,2,pump_unseat,wear / random,3,8.0,2.18
+2023-04-23,BGW-06,5,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18
+2024-12-27,BGW-06,8,rod_part,rod fatigue (Goodman overload),5,3.0,2.18
+2025-04-11,BGW-06,9,rod_part,rod fatigue (Goodman overload),5,5.0,2.18
+2020-01-16,BGW-07,1,rod_part,rod floating / impact loading,5,2.0,2.18
+2020-04-19,BGW-07,2,rod_part,rod floating / impact loading,5,7.0,2.18
+2020-04-27,BGW-07,2,rod_part,rod fatigue (Goodman overload),5,5.0,2.18
+2020-06-19,BGW-07,2,rod_part,rod floating / impact loading,5,4.0,2.18
+2020-09-03,BGW-07,3,rod_part,rod floating / impact loading,5,8.0,2.18
+2020-09-17,BGW-07,3,rod_part,rod floating / impact loading,5,7.0,2.18
+2020-10-10,BGW-07,3,rod_part,rod floating / impact loading,5,6.0,2.18
+2020-10-18,BGW-07,3,rod_part,rod floating / impact loading,5,5.0,2.18
+2020-11-11,BGW-07,3,rod_part,rod floating / impact loading,5,4.0,2.18
+2021-03-05,BGW-07,4,pump_unseat,rod floating / impact loading,3,6.0,2.18
+2021-09-11,BGW-07,4,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2022-01-05,BGW-07,5,pump_unseat,rod floating / impact loading,3,3.0,2.18
+2022-03-03,BGW-07,5,rod_part,rod floating / impact loading,5,2.0,2.18
+2022-08-03,BGW-07,6,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2022-10-25,BGW-07,6,rod_part,rod floating / impact loading,5,2.0,2.18
+2023-12-03,BGW-07,8,rod_part,rod floating / impact loading,5,2.0,2.18
+2024-10-21,BGW-07,10,rod_part,rod floating / impact loading,5,2.0,2.18
+2025-05-14,BGW-07,11,rod_part,rod floating / impact loading,5,2.0,2.18
+2025-11-26,BGW-07,12,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2020-04-16,BGW-08,1,rod_part,rod floating / impact loading,5,2.5,2.18
+2020-08-06,BGW-08,2,rod_part,rod floating / impact loading,5,7.0,2.18
+2020-08-15,BGW-08,2,pump_unseat,rod floating / impact loading,3,6.0,2.18
+2021-01-11,BGW-08,2,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18
+2021-02-05,BGW-08,2,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18
+2021-07-07,BGW-08,3,rod_part,rod fatigue (Goodman overload),5,5.0,2.18
+2022-02-21,BGW-08,4,rod_part,rod fatigue (Goodman overload),5,3.5,2.18
+2022-03-12,BGW-08,4,rod_part,rod fatigue (Goodman overload),5,3.0,2.18
+2023-01-30,BGW-08,5,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2024-05-04,BGW-08,7,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2024-11-13,BGW-08,8,rod_part,rod floating / impact loading,5,2.0,2.18
+2025-04-06,BGW-08,9,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2025-04-26,BGW-08,9,rod_part,rod floating / impact loading,5,2.0,2.18
+2020-10-18,BGW-09,1,rod_part,rod floating / impact loading,5,2.0,2.18
+2021-02-07,BGW-09,2,rod_part,rod floating / impact loading,5,5.5,2.18
+2021-07-26,BGW-09,3,rod_part,rod floating / impact loading,5,5.0,2.18
+2021-12-02,BGW-09,3,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2022-04-22,BGW-09,4,rod_part,rod floating / impact loading,5,3.0,2.18
+2022-10-17,BGW-09,5,rod_part,rod floating / impact loading,5,4.5,2.18
+2023-11-02,BGW-09,6,rod_part,rod floating / impact loading,5,2.0,2.18
+2024-03-13,BGW-09,7,rod_part,rod floating / impact loading,5,3.0,2.18
+2024-07-08,BGW-09,8,rod_part,rod floating / impact loading,5,3.5,2.18
+2024-11-02,BGW-09,9,rod_part,rod floating / impact loading,5,4.5,2.18
+2025-03-11,BGW-09,10,rod_part,rod floating / impact loading,5,4.5,2.18
+2025-06-10,BGW-09,10,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2025-07-09,BGW-09,10,rod_part,rod floating / impact loading,5,2.0,2.18
+2025-10-16,BGW-09,11,rod_part,wear / random,5,5.0,2.18
+2026-04-15,BGW-09,12,rod_part,rod floating / impact loading,5,2.0,2.18
+2020-02-26,BGW-10,1,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-06-25,BGW-10,2,rod_part,rod floating / impact loading,5,4.0,2.18
+2023-03-01,BGW-10,6,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-05-19,BGW-11,1,rod_part,wear / random,5,2.0,2.64
+2021-09-03,BGW-11,3,rod_part,wear / random,5,2.0,2.64
+2022-10-31,BGW-11,5,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-06-11,BGW-11,7,rod_part,wear / random,5,4.0,2.64
+2024-12-07,BGW-11,11,rod_part,wear / random,5,6.0,2.64
+2026-01-16,BGW-11,13,rod_part,wear / random,5,6.0,2.64
+2026-02-12,BGW-11,13,rod_part,wear / random,5,5.0,2.64
+2020-04-16,BGW-12,1,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-07-03,BGW-12,2,pump_unseat,wear / random,3,7.5,2.18
+2020-07-15,BGW-12,2,pump_unseat,wear / random,3,7.0,2.18
+2021-08-03,BGW-12,3,rod_part,rod floating / impact loading,5,4.0,2.18
+2023-06-01,BGW-12,5,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18
+2023-11-24,BGW-12,6,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2024-03-28,BGW-12,7,rod_part,rod floating / impact loading,5,3.0,2.18
+2025-07-22,BGW-12,9,rod_part,wear / random,5,2.0,2.18
+2025-09-09,BGW-12,10,rod_part,wear / random,5,8.0,2.18
+2025-11-09,BGW-12,10,rod_part,rod floating / impact loading,5,5.0,2.18
+2026-03-23,BGW-12,11,rod_part,rod floating / impact loading,5,4.5,2.18
+2021-02-06,BGW-13,2,rod_part,rod floating / impact loading,5,2.0,2.64
+2021-06-02,BGW-13,3,pump_unseat,rod floating / impact loading,3,3.5,2.64
+2021-07-03,BGW-13,3,rod_part,rod floating / impact loading,5,2.5,2.64
+2021-11-15,BGW-13,4,pump_unseat,rod floating / impact loading,3,2.5,2.64
+2021-12-14,BGW-13,4,pump_unseat,rod floating / impact loading,3,2.0,2.64
+2022-01-31,BGW-13,4,rod_part,rod floating / impact loading,5,2.0,2.64
+2022-08-15,BGW-13,5,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-02-15,BGW-13,6,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-07-12,BGW-13,7,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-09-08,BGW-13,8,rod_part,wear / random,5,6.0,2.64
+2023-11-12,BGW-13,8,rod_part,rod floating / impact loading,5,3.0,2.64
+2024-04-04,BGW-13,9,rod_part,rod floating / impact loading,5,2.0,2.64
+2024-06-12,BGW-13,10,rod_part,wear / random,5,5.5,2.64
+2025-02-10,BGW-13,11,rod_part,rod floating / impact loading,5,2.0,2.64
+2021-02-20,BGW-14,3,rod_part,wear / random,5,2.0,1.73
+2022-10-14,BGW-14,5,pump_unseat,wear / random,3,2.0,1.73
+2023-06-01,BGW-14,6,rod_part,wear / random,5,2.0,1.73
+2026-06-27,BGW-14,12,pump_unseat,wear / random,3,6.5,1.73
+2019-12-15,BGW-15,2,rod_part,rod floating / impact loading,5,5.0,2.18
+2020-03-13,BGW-15,3,rod_part,rod floating / impact loading,5,4.5,2.18
+2020-03-22,BGW-15,3,rod_part,rod floating / impact loading,5,3.5,2.18
+2020-10-06,BGW-15,3,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2021-05-17,BGW-15,4,pump_unseat,rod floating / impact loading,3,2.0,2.18
+2021-10-29,BGW-15,5,rod_part,rod floating / impact loading,5,2.0,2.18
+2022-09-08,BGW-15,7,rod_part,rod floating / impact loading,5,2.0,2.18
+2023-02-21,BGW-15,8,rod_part,rod floating / impact loading,5,2.0,2.18
+2023-08-06,BGW-15,9,rod_part,rod floating / impact loading,5,2.0,2.18
+2024-02-12,BGW-15,10,rod_part,rod floating / impact loading,5,2.0,2.18
+2024-07-29,BGW-15,11,rod_part,wear / random,5,2.0,2.18
+2025-02-05,BGW-15,12,rod_part,rod floating / impact loading,5,2.0,2.18
+2020-09-02,BGW-16,2,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2021-01-21,BGW-16,3,pump_unseat,rod floating / impact loading,3,3.5,2.18
+2021-12-11,BGW-16,4,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2022-04-04,BGW-16,5,rod_part,rod fatigue (Goodman overload),5,4.5,2.18
+2023-10-08,BGW-16,7,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2024-02-04,BGW-16,8,rod_part,wear / random,5,4.5,2.18
+2024-08-07,BGW-16,9,rod_part,rod fatigue (Goodman overload),5,3.5,2.18
+2020-01-06,BGW-17,1,rod_part,rod fatigue (Goodman overload),5,2.0,1.73
+2020-04-20,BGW-17,2,rod_part,rod floating / impact loading,5,7.0,1.73
+2020-05-14,BGW-17,2,rod_part,rod floating / impact loading,5,6.0,1.73
+2020-05-22,BGW-17,2,rod_part,rod floating / impact loading,5,5.0,1.73
+2020-06-30,BGW-17,2,rod_part,rod floating / impact loading,5,4.0,1.73
+2020-11-01,BGW-17,3,rod_part,rod floating / impact loading,5,7.0,1.73
+2021-09-03,BGW-17,4,rod_part,rod fatigue (Goodman overload),5,2.5,1.73
+2021-11-30,BGW-17,5,rod_part,rod floating / impact loading,5,6.0,1.73
+2021-12-09,BGW-17,5,rod_part,rod floating / impact loading,5,5.0,1.73
+2022-06-01,BGW-17,6,pump_unseat,rod floating / impact loading,3,6.0,1.73
+2022-06-13,BGW-17,6,rod_part,rod floating / impact loading,5,5.0,1.73
+2022-06-23,BGW-17,6,pump_unseat,rod floating / impact loading,3,4.0,1.73
+2022-07-31,BGW-17,6,rod_part,rod fatigue (Goodman overload),5,3.0,1.73
+2022-12-10,BGW-17,7,rod_part,rod floating / impact loading,5,5.0,1.73
+2023-05-12,BGW-17,8,rod_part,rod floating / impact loading,5,6.5,1.73
+2023-07-31,BGW-17,9,pump_unseat,wear / random,3,6.5,1.73
+2023-11-15,BGW-17,9,rod_part,rod floating / impact loading,5,3.5,1.73
+2024-03-27,BGW-17,10,rod_part,rod floating / impact loading,5,3.0,1.73
+2025-09-26,BGW-17,13,rod_part,rod floating / impact loading,5,3.5,1.73
+2026-03-23,BGW-17,14,rod_part,rod floating / impact loading,5,2.5,1.73
+2021-09-20,BGW-18,2,rod_part,rod fatigue (Goodman overload),5,4.0,1.73
+2023-04-20,BGW-18,4,pump_unseat,wear / random,3,2.5,1.73
+2023-04-28,BGW-18,4,rod_part,wear / random,5,2.0,1.73
+2020-03-12,BGW-19,2,rod_part,rod floating / impact loading,5,4.0,2.64
+2020-06-09,BGW-19,2,rod_part,rod floating / impact loading,5,2.0,2.64
+2020-09-23,BGW-19,3,rod_part,rod floating / impact loading,5,3.0,2.64
+2021-01-18,BGW-19,4,rod_part,rod floating / impact loading,5,4.0,2.64
+2021-04-08,BGW-19,4,rod_part,rod floating / impact loading,5,2.0,2.64
+2021-05-30,BGW-19,5,rod_part,wear / random,5,5.0,2.64
+2021-08-02,BGW-19,5,rod_part,rod floating / impact loading,5,2.0,2.64
+2022-01-04,BGW-19,6,rod_part,rod floating / impact loading,5,3.0,2.64
+2022-04-30,BGW-19,7,rod_part,rod floating / impact loading,5,3.0,2.64
+2022-08-09,BGW-19,8,rod_part,rod floating / impact loading,5,3.0,2.64
+2022-11-28,BGW-19,9,rod_part,rod floating / impact loading,5,4.0,2.64
+2023-06-03,BGW-19,10,rod_part,rod floating / impact loading,5,2.0,2.64
+2023-11-17,BGW-19,11,rod_part,rod floating / impact loading,5,2.0,2.64
+2024-12-28,BGW-19,14,rod_part,wear / random,5,2.0,2.64
+2025-06-05,BGW-19,15,rod_part,rod floating / impact loading,5,2.0,2.64
+2020-06-06,BGW-20,1,rod_part,rod fatigue (Goodman overload),5,2.0,2.18
+2020-09-20,BGW-20,2,rod_part,rod fatigue (Goodman overload),5,8.0,2.18
+2020-10-11,BGW-20,2,rod_part,rod floating / impact loading,5,7.0,2.18
+2020-12-16,BGW-20,2,rod_part,rod fatigue (Goodman overload),5,3.0,2.18
+2021-03-27,BGW-20,3,rod_part,rod fatigue (Goodman overload),5,8.0,2.18
+2021-07-14,BGW-20,3,pump_unseat,rod fatigue (Goodman overload),3,2.0,2.18

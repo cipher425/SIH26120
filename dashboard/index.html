@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThermoLift Twin</title>
+<link rel="stylesheet" href="styles.css">
+<script src="vendor/echarts.min.js"></script>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand">
+    <div class="brand-logo">TL</div>
+    <div><h1>ThermoLift Twin</h1><p>Well-to-Surface Digital Twin</p></div>
+  </div>
+  <nav class="nav" id="nav">
+    <button data-page="overview" class="active"><span class="ico">◧</span>Field Overview</button>
+    <button data-page="live"><span class="ico">◉</span>Live Well Twin</button>
+    <button data-page="css"><span class="ico">♨</span>CSS Optimizer</button>
+    <button data-page="srp"><span class="ico">⇅</span>SRP Optimizer</button>
+    <button data-page="steam"><span class="ico">▤</span>Steam Scheduler</button>
+    <button data-page="rel"><span class="ico">⚠</span>Reliability & Alerts</button>
+    <button data-page="models"><span class="ico">◈</span>AI Models</button>
+    <button data-page="arch"><span class="ico">⌬</span>Architecture</button>
+  </nav>
+  <div class="foot">Baghewala-type heavy oil field<br>17–19° API · Jodhpur Sandstone<br>SIH 2026 · PS 120</div>
+</aside>
+
+<main>
+  <header class="topbar">
+    <div><h2 id="pageTitle">Field Overview</h2><div class="sub" id="pageSub">Reservoir → wellbore → surface, one integrated view</div></div>
+    <div class="spacer"></div>
+    <label class="sub">Well&nbsp;<select id="wellSel"></select></label>
+    <span class="pill" id="asof">—</span>
+  </header>
+
+  <div class="content">
+    <!-- ======================= OVERVIEW ======================= -->
+    <section class="page active" id="page-overview">
+      <div class="kpis" id="kpis"></div>
+      <div class="grid g-21 mt">
+        <div class="card">
+          <h3>AI impact — validated on hidden ground-truth field physics</h3>
+          <p class="hint">Same wells, next CSS cycle. Plans chosen by the twin, scored on physics the twin never saw. Joint CSS + SRP optimisation beats optimising either alone.</p>
+          <div class="chart" id="chImpact"></div>
+        </div>
+        <div class="card">
+          <h3>Improvement vs today's practice</h3>
+          <p class="hint">Joint AI (D) vs historical (A), per day of operation</p>
+          <div id="impactTable"></div>
+        </div>
+      </div>
+      <div class="grid g-21 mt">
+        <div class="card">
+          <h3>Field production, steam & failures</h3>
+          <p class="hint">Monthly average oil rate, steam injected and rod/pump failures (historical data)</p>
+          <div class="chart" id="chMonthly"></div>
+        </div>
+        <div class="card">
+          <h3>Well map</h3>
+          <p class="hint">Bubble = oil rate · colour = phase · ring = failure risk</p>
+          <div class="chart" id="chMap"></div>
+        </div>
+      </div>
+      <div class="card mt">
+        <h3>Wells <span class="hint" style="margin:0">— click a well to open its live twin</span></h3>
+        <div class="tablewrap" id="wellTable"></div>
+      </div>
+    </section>
+
+    <!-- ======================= LIVE ======================= -->
+    <section class="page" id="page-live">
+      <div class="toolbar">
+        <span class="sub">Control mode</span>
+        <div class="switch" id="modeSwitch">
+          <button data-mode="manual" class="on manual">Manual (today)</button>
+          <button data-mode="ai" class="ai">AI closed-loop</button>
+        </div>
+        <div class="sep"></div>
+        <button class="btn primary" id="playBtn">▶ Play</button>
+        <button class="btn" id="stepBtn">Step +1 day</button>
+        <button class="btn" id="ffBtn">⏩ +30 days</button>
+        <label class="sub">Speed <select id="speedSel"><option value="1">1 day/tick</option><option value="3" selected>3 days/tick</option><option value="7">7 days/tick</option></select></label>
+        <label class="sub">Steam plan <select id="planSel"><option value="historical">Historical practice</option><option value="optimized">AI-optimised</option></select></label>
+        <button class="btn" id="resetBtn">↺ New cycle</button>
+        <div class="spacer" style="flex:1"></div>
+        <div class="daybadge">Cycle day <b id="dayNo">0</b> · <span id="phaseTag" class="tag idle">—</span></div>
+      </div>
+
+      <div class="grid g-live">
+        <div class="card">
+          <h3>Dynamometer card <span class="hint" style="margin:0">surface (solid) · computed downhole (dashed)</span></h3>
+          <div class="chart tall" id="chCard"></div>
+        </div>
+        <div class="card">
+          <h3>AI card diagnosis (CNN · M3)</h3>
+          <div class="diag-main" id="diagMain">—</div>
+          <div id="diagProbs"></div>
+          <div id="floatAlert"></div>
+        </div>
+        <div class="card">
+          <h3>Wellbore</h3>
+          <div class="schem" id="schem"></div>
+        </div>
+      </div>
+
+      <div class="card mt"><div class="gauges">
+        <div class="gauge" id="gT"></div><div class="gauge" id="gMu"></div><div class="gauge" id="gRfi"></div>
+        <div class="gauge" id="gFill"></div><div class="gauge" id="gRisk"></div>
+      </div></div>
+
+      <div class="grid g-21 mt">
+        <div class="card">
+          <h3>Cycle timeline</h3>
+          <p class="hint">Reservoir cools → viscosity rises → rod floating risk grows. Shaded = AI in control.</p>
+          <div class="chart" id="chTimeline"></div>
+        </div>
+        <div>
+          <div class="card reco">
+            <h3>Twin recommendation (SRP optimiser)</h3>
+            <div class="big" id="recoBig"></div>
+            <ul class="reasons" id="recoReasons"></ul>
+          </div>
+          <div class="card mt">
+            <h3>Scoreboard this cycle</h3>
+            <div class="score" id="scoreboard"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CSS ======================= -->
+    <section class="page" id="page-css">
+      <div class="toolbar">
+        <span class="sub">Bayesian optimisation (Optuna TPE) of steam volume, quality, injection pressure, soak time and cut-off — each trial runs the full coupled twin incl. the SRP controller.</span>
+        <div class="spacer" style="flex:1"></div>
+        <label class="sub">Trials <input type="number" id="trials" value="40" min="10" max="150" style="width:70px"></label>
+        <button class="btn primary" id="optBtn">Re-optimise</button>
+      </div>
+      <div class="scen" id="scenCards"></div>
+      <div class="grid g2 mt">
+        <div class="card">
+          <h3>Daily oil: historical vs joint-AI plan</h3>
+          <p class="hint">Cut-off follows the marginal-value rule: stop when daily margin drops below the cycle's average value rate</p>
+          <div class="chart" id="chCssCurve"></div>
+        </div>
+        <div class="card">
+          <h3>Optimisation trials</h3>
+          <p class="hint">Each dot = one simulated cycle plan; colour = net value/day; ★ = chosen plan</p>
+          <div class="chart" id="chTrials"></div>
+        </div>
+      </div>
+      <div class="grid g-12 mt">
+        <div class="card">
+          <h3>What-if simulator</h3>
+          <p class="hint">Ask the twin: what happens if…</p>
+          <div id="wiSliders"></div>
+          <div class="row mt">
+            <select id="wiMode"><option value="ai">AI SRP control</option><option value="historical">Manual SRP</option></select>
+            <button class="btn primary" id="wiBtn">Simulate cycle</button>
+          </div>
+          <div class="kv" id="wiOut"></div>
+        </div>
+        <div class="card">
+          <h3>What-if result</h3>
+          <div class="chart" id="chWhatIf"></div>
+        </div>
+      </div>
+      <div class="card mt">
+        <h3>Cycle history — actual vs history-matched twin</h3>
+        <p class="hint">Twin calibrated on the first 70% of cycles (k-multiplier & steam heat efficiency); later cycles are true out-of-sample predictions</p>
+        <div class="chart" id="chCycles"></div>
+      </div>
+    </section>
+
+    <!-- ======================= SRP ======================= -->
+    <section class="page" id="page-srp">
+      <div class="toolbar">
+        <span class="sub">Production day of next cycle</span>
+        <input type="range" id="srpDay" min="5" max="220" value="90" style="width:260px;accent-color:var(--accent)">
+        <b id="srpDayOut">90</b>
+        <label class="sub">Stroke <select id="srpStroke"><option value="">well default</option><option value="1.73">1.73 m (68")</option><option value="2.18">2.18 m (86")</option><option value="2.64">2.64 m (104")</option></select></label>
+        <button class="btn primary" id="srpBtn">Evaluate</button>
+      </div>
+      <div class="kpis" id="srpKpis" style="grid-template-columns:repeat(6,minmax(0,1fr))"></div>
+      <div class="grid g2 mt">
+        <div class="card">
+          <h3>Net value map (₹ thousand / day)</h3>
+          <p class="hint">SPM × VFD down-stroke share. ✕ = rod floats (RFI > 1). ● = optimum.</p>
+          <div class="chart tall" id="chHeat"></div>
+        </div>
+        <div class="card">
+          <h3>Rod-Float-Index map</h3>
+          <p class="hint">Slow down-stroke lets rods fall through viscous crude without separating from the carrier bar</p>
+          <div class="chart tall" id="chRfi"></div>
+        </div>
+      </div>
+      <div class="grid g-21 mt">
+        <div class="card">
+          <h3>45-day model-predictive plan</h3>
+          <p class="hint">Optimal SPM and VFD profile as the heated zone cools</p>
+          <div class="chart" id="chPlan"></div>
+        </div>
+        <div class="card reco">
+          <h3>Recommendation</h3>
+          <div class="big" id="srpReco"></div>
+          <ul class="reasons" id="srpReasons"></ul>
+          <div class="chart short" id="chProfile"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STEAM ======================= -->
+    <section class="page" id="page-steam">
+      <div class="toolbar">
+        <span class="sub">Field-level steam allocation: which well should the limited steam generators serve next?</span>
+        <div class="spacer" style="flex:1"></div>
+        <label class="sub">Steam generators <select id="genSel"><option>1</option><option selected>2</option><option>3</option></select></label>
+      </div>
+      <div class="grid g-12">
+        <div class="card">
+          <h3>Priority = value gain of re-steaming now</h3>
+          <p class="hint">Next-cycle value rate (twin-optimised plan) minus current daily margin</p>
+          <div class="chart tall" id="chGain"></div>
+        </div>
+        <div class="card">
+          <h3>Steam generator schedule</h3>
+          <div class="chart tall" id="chGantt"></div>
+        </div>
+      </div>
+      <div class="card mt"><div class="tablewrap" id="steamTable"></div></div>
+    </section>
+
+    <!-- ======================= RELIABILITY ======================= -->
+    <section class="page" id="page-rel">
+      <div class="grid g2">
+        <div class="card">
+          <h3>14-day failure risk by well (M4)</h3>
+          <p class="hint">Rod parting / pump unseating probability from physics-informed features</p>
+          <div class="chart tall" id="chRisk"></div>
+        </div>
+        <div class="card">
+          <h3>What drives failures</h3>
+          <p class="hint">Permutation importance (ROC-AUC drop) of the reliability model</p>
+          <div class="chart tall" id="chImp"></div>
+        </div>
+      </div>
+      <div class="grid g-12 mt">
+        <div class="card">
+          <h3>Failure causes (history)</h3>
+          <div class="chart" id="chCause"></div>
+        </div>
+        <div class="card">
+          <h3>Anomaly alerts (M5) — last 12 months</h3>
+          <p class="hint">Measured vs twin-expected: energy, load, liquid and temperature residuals</p>
+          <div class="tablewrap" id="anomTable"></div>
+        </div>
+      </div>
+      <div class="card mt">
+        <h3>Recent failures</h3>
+        <div class="tablewrap" id="failTable"></div>
+      </div>
+    </section>
+
+    <!-- ======================= MODELS ======================= -->
+    <section class="page" id="page-models">
+      <div class="kpis" id="modelKpis" style="grid-template-columns:repeat(5,minmax(0,1fr))"></div>
+      <div class="grid g2 mt">
+        <div class="card"><h3>M1 · Hybrid reservoir model — cycle oil error</h3>
+          <p class="hint">Out-of-sample cycles. Physics alone vs history-matched physics vs physics + ML residual</p>
+          <div class="chart" id="chM1"></div></div>
+        <div class="card"><h3>M1 · Predicted vs actual cycle oil</h3><div class="chart" id="chM1s"></div></div>
+        <div class="card"><h3>M2 · Forecast error by horizon (unseen wells)</h3>
+          <p class="hint">Hybrid LSTM (decline physics + learned correction) vs decline-curve analysis</p>
+          <div class="chart" id="chM2"></div></div>
+        <div class="card"><h3>M2 · 14-day oil forecast for selected well</h3><div class="chart" id="chM2f"></div></div>
+        <div class="card"><h3>M3 · Dyno-card CNN confusion matrix</h3><div class="chart tall" id="chM3"></div></div>
+        <div class="card"><h3>M4 & M5 · Reliability and anomaly detection</h3><div class="chart tall" id="chM45"></div></div>
+      </div>
+    </section>
+
+    <!-- ======================= ARCH ======================= -->
+    <section class="page" id="page-arch">
+      <div class="card arch" id="archCard"></div>
+    </section>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

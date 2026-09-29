@@ -1,0 +1,162 @@
+{
+ "BGW-01": {
+  "k_mult": 1.1683101483007337,
+  "heat_eff": 0.8765797680120997,
+  "conformance_decay": 0.0429104645308332,
+  "visc_factor": 1.01354053019042,
+  "channel_p_mpa": 6.227238721784777,
+  "channel_loss": 0.15
+ },
+ "BGW-02": {
+  "k_mult": 1.075826079876722,
+  "heat_eff": 0.8031434238101322,
+  "conformance_decay": 0.037321958129698185,
+  "visc_factor": 1.6012105816311937,
+  "channel_p_mpa": 6.96750973243421,
+  "channel_loss": 0.15
+ },
+ "BGW-03": {
+  "k_mult": 1.1147507682141637,
+  "heat_eff": 0.9048389702092802,
+  "conformance_decay": 0.04219057429987208,
+  "visc_factor": 1.172847112817722,
+  "channel_p_mpa": 6.288328103930244,
+  "channel_loss": 0.15
+ },
+ "BGW-04": {
+  "k_mult": 1.3484937950927642,
+  "heat_eff": 0.8802604442685708,
+  "conformance_decay": 0.0288438482457253,
+  "visc_factor": 1.0168102414681144,
+  "channel_p_mpa": 6.764998857416026,
+  "channel_loss": 0.15
+ },
+ "BGW-05": {
+  "k_mult": 1.1045435236057037,
+  "heat_eff": 0.8240390636650026,
+  "conformance_decay": 0.0364766605890758,
+  "visc_factor": 1.363737541069825,
+  "channel_p_mpa": 6.783898209106414,
+  "channel_loss": 0.15
+ },
+ "BGW-06": {
+  "k_mult": 1.0934154473660678,
+  "heat_eff": 0.8469234413361046,
+  "conformance_decay": 0.0252408490438593,
+  "visc_factor": 0.9632377266313583,
+  "channel_p_mpa": 6.6302825931188885,
+  "channel_loss": 0.15
+ },
+ "BGW-07": {
+  "k_mult": 0.9597451374655318,
+  "heat_eff": 0.7944586443230249,
+  "conformance_decay": 0.046104095861753666,
+  "visc_factor": 1.4588960979123409,
+  "channel_p_mpa": 6.2023633647952305,
+  "channel_loss": 0.15
+ },
+ "BGW-08": {
+  "k_mult": 1.036505673917657,
+  "heat_eff": 0.7862421260792839,
+  "conformance_decay": 0.02975963276978076,
+  "visc_factor": 1.3335111245914577,
+  "channel_p_mpa": 6.144524188866047,
+  "channel_loss": 0.15
+ },
+ "BGW-09": {
+  "k_mult": 1.1824934633885658,
+  "heat_eff": 0.8529987496257241,
+  "conformance_decay": 0.029628279774180838,
+  "visc_factor": 1.5239003131265678,
+  "channel_p_mpa": 6.571728052376075,
+  "channel_loss": 0.15
+ },
+ "BGW-10": {
+  "k_mult": 0.9073186370333506,
+  "heat_eff": 0.8221850675758513,
+  "conformance_decay": 0.03637690538767607,
+  "visc_factor": 1.1231714427970083,
+  "channel_p_mpa": 6.768647491917657,
+  "channel_loss": 0.15
+ },
+ "BGW-11": {
+  "k_mult": 0.969158044732615,
+  "heat_eff": 0.8183947635851404,
+  "conformance_decay": 0.047441742801958536,
+  "visc_factor": 1.1288974959692375,
+  "channel_p_mpa": 6.044910619392329,
+  "channel_loss": 0.15
+ },
+ "BGW-12": {
+  "k_mult": 1.0895353137620178,
+  "heat_eff": 0.892018441702354,
+  "conformance_decay": 0.020498420636914587,
+  "visc_factor": 1.2294838967811967,
+  "channel_p_mpa": 6.240970575005685,
+  "channel_loss": 0.15
+ },
+ "BGW-13": {
+  "k_mult": 0.9678399176548508,
+  "heat_eff": 0.7820904431562302,
+  "conformance_decay": 0.019186241199954213,
+  "visc_factor": 1.3758991186262228,
+  "channel_p_mpa": 6.677658673612857,
+  "channel_loss": 0.15
+ },
+ "BGW-14": {
+  "k_mult": 0.9077067758086736,
+  "heat_eff": 0.825142303767141,
+  "conformance_decay": 0.029543361814061336,
+  "visc_factor": 1.0211452010261475,
+  "channel_p_mpa": 6.95562325704697,
+  "channel_loss": 0.15
+ },
+ "BGW-15": {
+  "k_mult": 0.9441439148262476,
+  "heat_eff": 0.8501072402332938,
+  "conformance_decay": 0.0413905379700875,
+  "visc_factor": 1.5173676324250964,
+  "channel_p_mpa": 6.109143996765735,
+  "channel_loss": 0.15
+ },
+ "BGW-16": {
+  "k_mult": 0.7035997100094958,
+  "heat_eff": 0.848084532311445,
+  "conformance_decay": 0.019913582518054324,
+  "visc_factor": 1.0091319676853372,
+  "channel_p_mpa": 6.746014280243447,
+  "channel_loss": 0.15
+ },
+ "BGW-17": {
+  "k_mult": 0.9735904046405873,
+  "heat_eff": 0.7973235095498032,
+  "conformance_decay": 0.010845920653457602,
+  "visc_factor": 1.422035118161359,
+  "channel_p_mpa": 6.174641470935852,
+  "channel_loss": 0.15
+ },
+ "BGW-18": {
+  "k_mult": 1.519883461398203,
+  "heat_eff": 0.865684897761416,
+  "conformance_decay": 0.02665049702812769,
+  "visc_factor": 0.8694727219058117,
+  "channel_p_mpa": 6.373614138459572,
+  "channel_loss": 0.15
+ },
+ "BGW-19": {
+  "k_mult": 1.0105486080477701,
+  "heat_eff": 0.8968494531867194,
+  "conformance_decay": 0.015382088336525882,
+  "visc_factor": 1.4580046128982522,
+  "channel_p_mpa": 6.514222870190414,
+  "channel_loss": 0.15
+ },
+ "BGW-20": {
+  "k_mult": 0.936407021847215,
+  "heat_eff": 0.8369196119590394,
+  "conformance_decay": 0.03742973381823782,
+  "visc_factor": 1.012173246459991,
+  "channel_p_mpa": 6.94885792671534,
+  "channel_loss": 0.15
+ }
+}

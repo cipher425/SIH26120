@@ -1,0 +1,626 @@
+{
+ "M1": {
+  "n_train": 184,
+  "n_test": 62,
+  "mape_nominal_physics": 44.51582903102791,
+  "mape_calibrated_physics": 32.470380140601364,
+  "mape_hybrid": 7.070720119619671,
+  "feature_importance": {
+   "cycle": 0.6996,
+   "steam_t": 0.0089,
+   "quality": 0.0134,
+   "inj_pressure_mpa": 0.0191,
+   "soak_days": 0.0055,
+   "cutoff_bopd": 0.0134,
+   "log_sim_oil": 0.0552,
+   "k_mult": 0.0132,
+   "heat_eff": 0.1119,
+   "visc_factor_lab": 0.0419,
+   "h_m": 0.0179
+  },
+  "scatter": [
+   {
+    "well": "BGW-01",
+    "cycle": 8,
+    "actual": 8807.1,
+    "physics": 12535.5,
+    "hybrid": 10042.4
+   },
+   {
+    "well": "BGW-01",
+    "cycle": 9,
+    "actual": 2330.3,
+    "physics": 3218.2,
+    "hybrid": 2599.6
+   },
+   {
+    "well": "BGW-02",
+    "cycle": 12,
+    "actual": 2387.3,
+    "physics": 3419.4,
+    "hybrid": 2508.1
+   },
+   {
+    "well": "BGW-02",
+    "cycle": 13,
+    "actual": 2709.6,
+    "physics": 3744.9,
+    "hybrid": 2718.1
+   },
+   {
+    "well": "BGW-02",
+    "cycle": 14,
+    "actual": 2969.8,
+    "physics": 4340.6,
+    "hybrid": 3141.2
+   },
+   {
+    "well": "BGW-02",
+    "cycle": 15,
+    "actual": 2533.8,
+    "physics": 3641.5,
+    "hybrid": 2633.8
+   },
+   {
+    "well": "BGW-03",
+    "cycle": 11,
+    "actual": 2168.2,
+    "physics": 3012.6,
+    "hybrid": 2301.7
+   },
+   {
+    "well": "BGW-03",
+    "cycle": 12,
+    "actual": 1232.1,
+    "physics": 1740.9,
+    "hybrid": 1317.5
+   },
+   {
+    "well": "BGW-03",
+    "cycle": 13,
+    "actual": 2924.9,
+    "physics": 4418.7,
+    "hybrid": 3310.7
+   },
+   {
+    "well": "BGW-04",
+    "cycle": 11,
+    "actual": 3211.9,
+    "physics": 4417.2,
+    "hybrid": 3318.2
+   },
+   {
+    "well": "BGW-04",
+    "cycle": 12,
+    "actual": 2394.3,
+    "physics": 3541.1,
+    "hybrid": 2752.0
+   },
+   {
+    "well": "BGW-04",
+    "cycle": 13,
+    "actual": 2241.5,
+    "physics": 3285.4,
+    "hybrid": 2536.7
+   },
+   {
+    "well": "BGW-05",
+    "cycle": 11,
+    "actual": 3081.2,
+    "physics": 4580.6,
+    "hybrid": 3318.0
+   },
+   {
+    "well": "BGW-05",
+    "cycle": 12,
+    "actual": 1639.0,
+    "physics": 2462.6,
+    "hybrid": 1792.2
+   },
+   {
+    "well": "BGW-05",
+    "cycle": 13,
+    "actual": 1607.5,
+    "physics": 2371.9,
+    "hybrid": 1698.7
+   },
+   {
+    "well": "BGW-06",
+    "cycle": 9,
+    "actual": 2942.1,
+    "physics": 3663.8,
+    "hybrid": 3043.8
+   },
+   {
+    "well": "BGW-06",
+    "cycle": 10,
+    "actual": 6955.4,
+    "physics": 8574.6,
+    "hybrid": 6418.4
+   },
+   {
+    "well": "BGW-06",
+    "cycle": 11,
+    "actual": 1436.4,
+    "physics": 1794.5,
+    "hybrid": 1361.1
+   },
+   {
+    "well": "BGW-07",
+    "cycle": 11,
+    "actual": 3186.1,
+    "physics": 4626.1,
+    "hybrid": 3053.2
+   },
+   {
+    "well": "BGW-07",
+    "cycle": 12,
+    "actual": 2455.7,
+    "physics": 3410.7,
+    "hybrid": 2268.0
+   },
+   {
+    "well": "BGW-07",
+    "cycle": 13,
+    "actual": 2172.0,
+    "physics": 2906.6,
+    "hybrid": 1984.2
+   },
+   {
+    "well": "BGW-08",
+    "cycle": 9,
+    "actual": 3288.7,
+    "physics": 4339.7,
+    "hybrid": 3524.3
+   },
+   {
+    "well": "BGW-08",
+    "cycle": 10,
+    "actual": 2840.0,
+    "physics": 3781.8,
+    "hybrid": 2834.6
+   },
+   {
+    "well": "BGW-08",
+    "cycle": 11,
+    "actual": 2380.8,
+    "physics": 3426.0,
+    "hybrid": 2463.0
+   },
+   {
+    "well": "BGW-09",
+    "cycle": 10,
+    "actual": 6336.3,
+    "physics": 8278.5,
+    "hybrid": 6610.4
+   },
+   {
+    "well": "BGW-09",
+    "cycle": 11,
+    "actual": 1654.8,
+    "physics": 2176.3,
+    "hybrid": 1734.0
+   },
+   {
+    "well": "BGW-09",
+    "cycle": 12,
+    "actual": 5094.1,
+    "physics": 7194.5,
+    "hybrid": 5726.8
+   },
+   {
+    "well": "BGW-10",
+    "cycle": 10,
+    "actual": 2047.8,
+    "physics": 2826.5,
+    "hybrid": 1968.5
+   },
+   {
+    "well": "BGW-10",
+    "cycle": 11,
+    "actual": 2393.7,
+    "physics": 3802.3,
+    "hybrid": 2647.2
+   },
+   {
+    "well": "BGW-10",
+    "cycle": 12,
+    "actual": 1693.0,
+    "physics": 2904.5,
+    "hybrid": 2026.2
+   },
+   {
+    "well": "BGW-11",
+    "cycle": 11,
+    "actual": 493.2,
+    "physics": 839.4,
+    "hybrid": 566.6
+   },
+   {
+    "well": "BGW-11",
+    "cycle": 12,
+    "actual": 10986.6,
+    "physics": 13794.2,
+    "hybrid": 9429.3
+   },
+   {
+    "well": "BGW-11",
+    "cycle": 13,
+    "actual": 669.9,
+    "physics": 838.4,
+    "hybrid": 564.7
+   },
+   {
+    "well": "BGW-12",
+    "cycle": 9,
+    "actual": 1855.4,
+    "physics": 2156.8,
+    "hybrid": 1776.6
+   },
+   {
+    "well": "BGW-12",
+    "cycle": 10,
+    "actual": 4222.8,
+    "physics": 5296.1,
+    "hybrid": 4009.2
+   },
+   {
+    "well": "BGW-12",
+    "cycle": 11,
+    "actual": 5117.8,
+    "physics": 5962.5,
+    "hybrid": 4508.3
+   },
+   {
+    "well": "BGW-13",
+    "cycle": 11,
+    "actual": 9725.3,
+    "physics": 10848.7,
+    "hybrid": 8726.4
+   },
+   {
+    "well": "BGW-13",
+    "cycle": 12,
+    "actual": 1828.4,
+    "physics": 2039.6,
+    "hybrid": 1607.1
+   },
+   {
+    "well": "BGW-13",
+    "cycle": 13,
+    "actual": 2855.8,
+    "physics": 3569.9,
+    "hybrid": 2918.1
+   },
+   {
+    "well": "BGW-13",
+    "cycle": 14,
+    "actual": 1384.1,
+    "physics": 1734.2,
+    "hybrid": 1387.0
+   },
+   {
+    "well": "BGW-14",
+    "cycle": 9,
+    "actual": 4165.3,
+    "physics": 5254.3,
+    "hybrid": 4265.5
+   },
+   {
+    "well": "BGW-14",
+    "cycle": 10,
+    "actual": 2846.8,
+    "physics": 3700.2,
+    "hybrid": 2830.3
+   },
+   {
+    "well": "BGW-14",
+    "cycle": 11,
+    "actual": 2316.1,
+    "physics": 3260.9,
+    "hybrid": 2568.9
+   },
+   {
+    "well": "BGW-15",
+    "cycle": 12,
+    "actual": 2340.2,
+    "physics": 3249.1,
+    "hybrid": 2476.9
+   },
+   {
+    "well": "BGW-15",
+    "cycle": 13,
+    "actual": 1356.9,
+    "physics": 1861.9,
+    "hybrid": 1391.1
+   },
+   {
+    "well": "BGW-15",
+    "cycle": 14,
+    "actual": 2687.6,
+    "physics": 3804.4,
+    "hybrid": 2835.5
+   },
+   {
+    "well": "BGW-15",
+    "cycle": 15,
+    "actual": 1833.7,
+    "physics": 2433.3,
+    "hybrid": 1844.1
+   },
+   {
+    "well": "BGW-16",
+    "cycle": 10,
+    "actual": 4796.2,
+    "physics": 5540.2,
+    "hybrid": 4425.7
+   },
+   {
+    "well": "BGW-16",
+    "cycle": 11,
+    "actual": 2160.7,
+    "physics": 2549.0,
+    "hybrid": 2078.1
+   },
+   {
+    "well": "BGW-16",
+    "cycle": 12,
+    "actual": 2900.0,
+    "physics": 3631.1,
+    "hybrid": 2869.6
+   },
+   {
+    "well": "BGW-17",
+    "cycle": 11,
+    "actual": 6557.6,
+    "physics": 6788.5,
+    "hybrid": 5710.5
+   },
+   {
+    "well": "BGW-17",
+    "cycle": 12,
+    "actual": 1360.9,
+    "physics": 1424.7,
+    "hybrid": 1236.3
+   },
+   {
+    "well": "BGW-17",
+    "cycle": 13,
+    "actual": 2851.4,
+    "physics": 3161.8,
+    "hybrid": 2754.7
+   },
+   {
+    "well": "BGW-17",
+    "cycle": 14,
+    "actual": 3325.9,
+    "physics": 3754.2,
+    "hybrid": 3274.0
+   },
+   {
+    "well": "BGW-18",
+    "cycle": 7,
+    "actual": 5719.4,
+    "physics": 6573.8,
+    "hybrid": 5532.4
+   },
+   {
+    "well": "BGW-18",
+    "cycle": 8,
+    "actual": 2561.0,
+    "physics": 3036.1,
+    "hybrid": 2590.2
+   },
+   {
+    "well": "BGW-19",
+    "cycle": 14,
+    "actual": 1306.0,
+    "physics": 1626.6,
+    "hybrid": 1453.1
+   },
+   {
+    "well": "BGW-19",
+    "cycle": 15,
+    "actual": 2915.6,
+    "physics": 3469.2,
+    "hybrid": 3082.5
+   },
+   {
+    "well": "BGW-19",
+    "cycle": 16,
+    "actual": 1344.6,
+    "physics": 1567.7,
+    "hybrid": 1375.4
+   },
+   {
+    "well": "BGW-19",
+    "cycle": 17,
+    "actual": 2196.6,
+    "physics": 2691.8,
+    "hybrid": 2392.0
+   },
+   {
+    "well": "BGW-20",
+    "cycle": 8,
+    "actual": 4431.0,
+    "physics": 5922.6,
+    "hybrid": 4820.7
+   },
+   {
+    "well": "BGW-20",
+    "cycle": 9,
+    "actual": 3499.0,
+    "physics": 4897.4,
+    "hybrid": 3984.5
+   }
+  ]
+ },
+ "M2": {
+  "test_wells": [
+   "BGW-17",
+   "BGW-18",
+   "BGW-19",
+   "BGW-20"
+  ],
+  "n_test_windows": 3043,
+  "mae_lstm": 1.3522608280181885,
+  "mae_decline_curve": 1.6046664714813232,
+  "mae_persistence": 2.0242674350738525,
+  "mape_lstm": 4.760453701019287,
+  "mape_decline_curve": 5.606752872467041,
+  "mae_by_horizon_lstm": [
+   1.1649999618530273,
+   1.2050000429153442,
+   1.2359999418258667,
+   1.2669999599456787,
+   1.3009999990463257,
+   1.3109999895095825,
+   1.343999981880188,
+   1.3760000467300415,
+   1.402999997138977,
+   1.409000039100647,
+   1.4450000524520874,
+   1.4670000076293945,
+   1.4809999465942383,
+   1.5199999809265137
+  ],
+  "mae_by_horizon_decline": [
+   1.2549999952316284,
+   1.3070000410079956,
+   1.3680000305175781,
+   1.409000039100647,
+   1.4819999933242798,
+   1.5049999952316284,
+   1.5829999446868896,
+   1.6269999742507935,
+   1.6959999799728394,
+   1.718999981880188,
+   1.812999963760376,
+   1.8339999914169312,
+   1.9140000343322754,
+   1.9550000429153442
+  ]
+ },
+ "M3": {
+  "accuracy": 0.9928571428571429,
+  "macro_f1": 0.9926663457984599,
+  "classes": [
+   "normal",
+   "fluid_pound",
+   "gas_interference",
+   "rod_float",
+   "pump_unseated",
+   "tv_leak",
+   "sv_leak"
+  ],
+  "confusion_matrix": [
+   [
+    210,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    219,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    226,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    232,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    226,
+    0,
+    0
+   ],
+   [
+    9,
+    0,
+    0,
+    0,
+    0,
+    208,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    208
+   ]
+  ]
+ },
+ "M4": {
+  "train_period": "< 2024-07-01",
+  "test_period": ">= 2024-07-01",
+  "positive_rate": 0.0565149136577708,
+  "roc_auc": 0.7322251266179596,
+  "pr_auc": 0.18585613289725111,
+  "lift_top10pct": 3.906365134768276,
+  "oracle_roc_auc": 0.7136473361726796,
+  "pct_of_achievable": 108.69554040695574,
+  "feature_importance": {
+   "RFI_est": 0.0023,
+   "stress_est": 0.0071,
+   "MPRL_norm": 0.0707,
+   "PPRL_kN": 0.0695,
+   "spm": 0.0036,
+   "down_frac": 0.0,
+   "fillage": 0.0164,
+   "log_mu_tub": 0.0017,
+   "rfi_7d": 0.0023,
+   "float_7d": 0.0033,
+   "float_30d": -0.0057,
+   "impact_30d": -0.0046,
+   "haz_phys": 0.0008,
+   "haz_phys_14d": 0.001,
+   "days_since_failure": 0.0191
+  }
+ },
+ "M5": {
+  "iso_precision": 0.46140797285835455,
+  "iso_recall": 0.5579487179487179,
+  "iso_f1": 0.5051067780872794,
+  "precision": 0.8670520231213873,
+  "recall": 0.9771986970684039,
+  "f1": 0.9188361408882083,
+  "type_accuracy_on_detected": 0.9933333333333333,
+  "injected_anomaly_rate": 0.024823056163755793,
+  "recall_by_type": {
+   "load_cell_drift": 0.9484536082474226,
+   "motor_fault": 0.9811320754716981,
+   "sensor_freeze": 1.0,
+   "tubing_leak": 0.9878048780487805
+  }
+ },
+ "trained_at": "2026-09-28 01:15"
+}

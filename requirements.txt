@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+optuna
+fastapi
+uvicorn[standard]
+joblib
+pyarrow
+matplotlib
+httpx
+# PyTorch CPU build:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch
